@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE5FD9F4-F392-4B8E-9AE7-2474EE7AD5B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnderTheCursorTranslatorLibrary</RootNamespace>
+    <AssemblyName>UnderTheCursorTranslatorLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Apis, Version=1.25.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.25.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.25.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.25.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.25.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.25.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Translate.v2, Version=1.25.0.543, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Translate.v2.1.25.0.543\lib\net45\Google.Apis.Translate.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHunspell, Version=1.2.5554.16953, Culture=neutral, PublicKeyToken=1ac793ea843b4366, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHunspell.1.2.5554.16953\lib\net\NHunspell.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.9\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, PublicKeyToken=431cba815f6a8b5b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoStart.cs" />
+    <Compile Include="AVLTree.cs" />
+    <Compile Include="BinaryTree.cs" />
+    <Compile Include="DictionariesFileNames.cs" />
+    <Compile Include="Dictionary.cs" />
+    <Compile Include="GeneralProcessor.cs" />
+    <Compile Include="InputHooking\ProcessFunction.cs" />
+    <Compile Include="InputHooking\Windows\GlobalHook.cs" />
+    <Compile Include="InputHooking\InputCombination.cs" />
+    <Compile Include="InputHooking\InputHook.cs" />
+    <Compile Include="InputHooking\Windows\InputHookWin.cs" />
+    <Compile Include="InputHooking\Windows\KeyboardHook.cs" />
+    <Compile Include="InputHooking\Windows\MouseHook.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenCapturing\enmScreenCaptureMode.cs" />
+    <Compile Include="ScreenCapturing\ScreenCapturer.cs" />
+    <Compile Include="ScreenCapturing\ScreenCapturerWin.cs" />
+    <Compile Include="SerializableSortedList.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TextErrorCorrector\TextErrorCorrector.cs" />
+    <Compile Include="TextErrorCorrector\WordErrorCorrectorHunspell.cs" />
+    <Compile Include="TextErrorCorrector\WordErrorCorrectorUselessChars.cs" />
+    <Compile Include="TextExtraction\TextExtractor.cs" />
+    <Compile Include="TextExtraction\TextExtractorUiAutomation.cs" />
+    <Compile Include="TextExtraction\WordRecognizerTesseractHocr.cs" />
+    <Compile Include="TextExtraction\WordRecognizerTesseract.cs" />
+    <Compile Include="TextRegionExtraction\ITextRegionExtractor.cs" />
+    <Compile Include="TextRegionExtraction\TextRegionExtractor.cs" />
+    <Compile Include="TextRegionExtraction\TextRegionExtractorSimple.cs" />
+    <Compile Include="TextTranslation\enmLanguage.cs" />
+    <Compile Include="TextTranslation\enmTextTranslatorType.cs" />
+    <Compile Include="TextTranslation\LanguageIdEncoding.cs" />
+    <Compile Include="TextTranslation\TextTranslatorFactory.cs" />
+    <Compile Include="TextTranslation\TextTranslatorGoogle.cs" />
+    <Compile Include="TextTranslation\TextTranslator.cs" />
+    <Compile Include="TextTranslation\TextTranslatorGoogleUnofficial.cs" />
+    <Compile Include="TextTranslation\TranscriptionTranslation.cs" />
+    <Compile Include="TextTranslation\WordTranslatorXdxf.cs" />
+    <Compile Include="WordCapturer.cs" />
+    <Compile Include="WordTranslation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\NHunspell.1.2.5554.16953\content\Hunspellx64.dll">
+      <Link>Hunspellx64.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\NHunspell.1.2.5554.16953\content\Hunspellx86.dll">
+      <Link>Hunspellx86.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
