@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" ></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="Scripts/webaudio_tools.js"></script>
+    <script src="Scripts/teoria.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div style="margin:15px">
+        <canvas id="canvas" width="300" height="300"></canvas>
+        <table>
+            <tr>
+                <td>Ms per note</td>
+                <td><div id="sliderSpeed"></div></td>
+                <td id="speed" style="margin-left:60px"></td>
+            </tr>
+            <tr>
+                <td>Note</td>
+                <td id="curNoteNumber"></td>
+            </tr>
+            <tr>
+                <td>Scale</td>
+                <td>
+                    <select id="scale" name="scale">
+                        <option selected="selected">major</option>
+                        <option>minor</option>
+                        <option>chromatic</option>
+                        <option>ionian</option>
+                        <option>dorian</option>
+                        <option>phrygian</option>
+                        <option>lydian</option>
+                        <option>mixolydian</option>
+                        <option>aeolian</option>
+                        <option>locrian</option>
+                        <option>majorpentatonic</option>
+                        <option>minorpentatonic</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Start note</td>
+                <td>
+                    <select id="startNode" name="startNote">
+                        <option>c</option>
+                        <option>d</option>
+                        <option>e</option>
+                        <option>f</option>
+                        <option>g</option>
+                        <option selected="selected">a</option>
+                        <option>b</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Start octave</td>
+                <td>
+                    <select id="startOctave" name="startOctave">
+                        <option selected="selected">0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option selected="selected">4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tone</td>
+                <td>
+                    <select id="tone" name="tone">
+                        <option selected="selected">sine</option>
+                        <option>square</option>
+                        <option>sawtooth</option>
+                        <option>triangle</option>
+                        <option>custom</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="clearCells">Clear cells</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="generateScale">Generate scale</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="generateRandom">Generate random</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="stopStart">Stop</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Volume</td>
+                <td><div id="volume"></div></td>
+            </tr>
+            <tr>
+                <td>
+                    Notes count
+                </td>
+                <td>
+                    <input id="notesCount" name="notesCount">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tones count
+                </td>
+                <td>
+                    <input id="tonesCount" name="tonesCount">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
