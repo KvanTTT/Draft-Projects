@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UnderTheCursorTranslator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="InputCombination" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Keyboard.LControlKey</Value>
+    </Setting>
+    <Setting Name="AffixDictionaryFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Spell Checking\en_US</Value>
+    </Setting>
+    <Setting Name="DictionariesFileNames" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Xdxf Dictionaries\eng-rus.bin</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
