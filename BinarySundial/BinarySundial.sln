@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySundial", "BinarySundial\BinarySundial.csproj", "{238AD77E-2C94-4C98-90E2-97233AC4A2FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySundial.GUI", "BinarySundial.GUI\BinarySundial.GUI.csproj", "{9A765E61-D0A9-4973-A6D2-8A67B76D0E18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySundial.Tests", "BinarySundial.Tests\BinarySundial.Tests.csproj", "{1DDB3CF0-53F5-463B-8086-AFA3CC758890}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{238AD77E-2C94-4C98-90E2-97233AC4A2FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238AD77E-2C94-4C98-90E2-97233AC4A2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238AD77E-2C94-4C98-90E2-97233AC4A2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238AD77E-2C94-4C98-90E2-97233AC4A2FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A765E61-D0A9-4973-A6D2-8A67B76D0E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A765E61-D0A9-4973-A6D2-8A67B76D0E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A765E61-D0A9-4973-A6D2-8A67B76D0E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A765E61-D0A9-4973-A6D2-8A67B76D0E18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DDB3CF0-53F5-463B-8086-AFA3CC758890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDB3CF0-53F5-463B-8086-AFA3CC758890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DDB3CF0-53F5-463B-8086-AFA3CC758890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDB3CF0-53F5-463B-8086-AFA3CC758890}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
