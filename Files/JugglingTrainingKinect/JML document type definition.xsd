@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wmh="http://www.wmhelp.com/2003/eGenerator" elementFormDefault="qualified">
+  <xs:element name="jml">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="pattern"/>
+        <xs:element ref="patternlist"/>
+      </xs:choice>
+      <xs:attribute name="version" type="xs:string" default="1.0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pattern">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element ref="prop" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="setup"/>
+        <xs:element ref="symmetry" maxOccurs="unbounded"/>
+        <xs:element ref="event" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="prop">
+    <xs:complexType>
+      <xs:attribute name="type" type="xs:string" default="ball"/>
+      <xs:attribute name="mod" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setup">
+    <xs:complexType>
+      <xs:attribute name="jugglers" type="xs:string" default="1"/>
+      <xs:attribute name="paths" type="xs:string" use="required"/>
+      <xs:attribute name="props" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="symmetry">
+    <xs:complexType>
+      <xs:attribute name="type" type="xs:string" use="required"/>
+      <xs:attribute name="jperm" type="xs:string"/>
+      <xs:attribute name="pperm" type="xs:string" use="required"/>
+      <xs:attribute name="delay" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="event">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="throw"/>
+        <xs:element ref="catch"/>
+        <xs:element ref="softcatch"/>
+        <xs:element ref="holding"/>
+      </xs:choice>
+      <xs:attribute name="x" type="xs:string" use="required"/>
+      <xs:attribute name="y" type="xs:string" default="0.0"/>
+      <xs:attribute name="z" type="xs:string" default="0.0"/>
+      <xs:attribute name="t" type="xs:string" use="required"/>
+      <xs:attribute name="hand" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="throw">
+    <xs:complexType>
+      <xs:attribute name="path" type="xs:string" use="required"/>
+      <xs:attribute name="type" type="xs:string" default="toss"/>
+      <xs:attribute name="mod" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="catch">
+    <xs:complexType>
+      <xs:attribute name="path" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="softcatch">
+    <xs:complexType>
+      <xs:attribute name="path" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="holding">
+    <xs:complexType>
+      <xs:attribute name="path" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="position">
+    <xs:complexType>
+      <xs:attribute name="x" type="xs:string" use="required"/>
+      <xs:attribute name="y" type="xs:string" use="required"/>
+      <xs:attribute name="z" type="xs:string" default="100.0"/>
+      <xs:attribute name="t" type="xs:string" use="required"/>
+      <xs:attribute name="angle" type="xs:string" default="0.0"/>
+      <xs:attribute name="juggler" type="xs:string" default="1"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="patternlist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title" minOccurs="0"/>
+        <xs:element ref="line" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="line">
+    <xs:complexType>
+      <xs:attribute name="display" type="xs:string" use="required"/>
+      <xs:attribute name="animprefs" type="xs:string"/>
+      <xs:attribute name="notation" type="xs:string"/>
+      <xs:attribute name="pattern" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
