@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Bodies>
+<FloatRect Name="Rect0" Left="0.00174400012" Top="0.00258496427" Width="0.000292000041" Height="0.00210052659" />
+<FloatRect Name="Rect1" Left="0.00062" Top="0.00117882667" Width="0.000448000035" Height="0.00241300161" />
+<FloatRect Name="Rect2" Left="0.000212000028" Top="0.005136844" Width="0.0008760001" Height="0.001197821" />
+<FloatRect Name="Rect3" Left="0.00289384462" Top="0.00237664743" Width="0.000624000037" Height="0.0024650807" />
+<FloatCircle Name="Circle0" X="0.00246984442" Y="0.00131770445" Radius="0.00019859508" />
+<FloatCircle Name="Circle1" X="0.00455111451" Y="0.00286271982" Radius="0.000259538065" />
+<FloatPolygon Name="Polygon0">
+  <Vertexes>
+    <FloatPoint X="1373.77844" Y="179.905838" />
+    <FloatPoint X="1236.77844" Y="282.905853" />
+    <FloatPoint X="1350.77844" Y="349.905853" />
+    <FloatPoint X="1526.77844" Y="159.905838" />
+    <FloatPoint X="1394.77844" Y="37.9058456" />
+    <FloatPoint X="1387.77844" Y="107.905846" />
+  </Vertexes>
+</FloatPolygon>
+<FloatLine Name="Line0" X1="0.006556863" Y1="0.005692355" X2="0.007200863" Y2="0.00196001423" />
+<FloatRect Name="Rect4" Left="0.198000014" Top="0.332927734" Width="0.202" Height="0.4374825" />
+<FloatRect Name="Rect5" Left="0.640000045" Top="0.832907736" Width="0.448" Height="0.566644" />
+<FloatCircle Name="Circle2" X="1.53008389" Y="0.970402241" Radius="0.137244314" />
+<FloatPolygon Name="Polygon1">
+  <Vertexes>
+    <FloatPoint X="932.041931" Y="312.905853" />
+    <FloatPoint X="952.041931" Y="96.9058456" />
+    <FloatPoint X="1133.04187" Y="51.9058456" />
+    <FloatPoint X="1155.04187" Y="264.905853" />
+  </Vertexes>
+</FloatPolygon>
+<FloatLine Name="Line1" X1="3.081078" Y1="1.47038233" X2="3.265078" Y2="0.5704182" />
+<FloatSize X="10" Y="1.6666" />
+</Bodies>
