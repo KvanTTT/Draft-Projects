@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypingTextFollowing.GUI", "KeyboardTypeHMM\TypingTextFollowing.GUI.csproj", "{060BB824-37F3-46B9-B8B1-0B0CB1311626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequencesFollowing", "SequencesFollowing\SequencesFollowing.csproj", "{82F3C1A9-4DF6-4004-884E-2448E91A4D5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypingTextFollowing", "TypingTextFollowing\TypingTextFollowing.csproj", "{05EDD521-BD0E-4EEC-A5FC-66B948B9C33C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequencesFollowing.Tests", "SequencesFollowing.Tests\SequencesFollowing.Tests.csproj", "{217112C5-95EA-40FF-8E9F-5856F61EDA46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypingTextFollowing.Tests", "TypingTextFollowing.Tests\TypingTextFollowing.Tests.csproj", "{FEB1F329-C24C-4D65-A033-865731DB9399}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{060BB824-37F3-46B9-B8B1-0B0CB1311626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{060BB824-37F3-46B9-B8B1-0B0CB1311626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{060BB824-37F3-46B9-B8B1-0B0CB1311626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{060BB824-37F3-46B9-B8B1-0B0CB1311626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F3C1A9-4DF6-4004-884E-2448E91A4D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F3C1A9-4DF6-4004-884E-2448E91A4D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F3C1A9-4DF6-4004-884E-2448E91A4D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F3C1A9-4DF6-4004-884E-2448E91A4D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EDD521-BD0E-4EEC-A5FC-66B948B9C33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EDD521-BD0E-4EEC-A5FC-66B948B9C33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EDD521-BD0E-4EEC-A5FC-66B948B9C33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EDD521-BD0E-4EEC-A5FC-66B948B9C33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217112C5-95EA-40FF-8E9F-5856F61EDA46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217112C5-95EA-40FF-8E9F-5856F61EDA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217112C5-95EA-40FF-8E9F-5856F61EDA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217112C5-95EA-40FF-8E9F-5856F61EDA46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB1F329-C24C-4D65-A033-865731DB9399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB1F329-C24C-4D65-A033-865731DB9399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB1F329-C24C-4D65-A033-865731DB9399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB1F329-C24C-4D65-A033-865731DB9399}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
