@@ -1,0 +1,42 @@
+with TBackgroundPanel.Create(DXSpriteEngine.Engine) do begin
+begin
+SetMapSize(800, 600);
+    Image := DXImageList1.Items.Find('Iaiaeu');
+    x := DxDraw.Display.Width - Image.Width + 20;
+    Y := 1;
+    Z := -2;
+    Tile := false;
+end;
+
+with TScrollBackground.Create(DXSpriteEngine.Engine) do
+begin
+SetMapSize(200, 150);
+    Image := DXImageList1.Items.Find('Star1');
+    Y := 40;
+    Z := -3;
+    FSpeed := 1;
+    Tile := true;
+end;
+
+with TScrollBackground1.Create(DXSpriteEngine.Engine) do
+begin
+SetMapSize(800, 600);
+    Image := DXImageList1.Items.Find('Star');
+    Y := 0;
+    x := 0;
+    Z := -3;
+    Tile := true;
+end;
+
+
+with TPlayer1.create(form1.DXSpriteEngine.engine) do
+ begin
+      x:= dxdraw.Display.Width div 2 - 32;
+      y:= dxdraw.Display.Height - 85;
+end;
+
+with THealth.Create(form1.DXSpriteEngine.engine) do begin
+x := dxdraw.Display.Width - 65;
+y := dxdraw.Display.Height - 70;
+z := -2;
+end;
